@@ -1,0 +1,393 @@
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'WisdomScriptAJ';
+    src: url('../fonts/WisdomScriptAJ.eot');
+    src: local('WisdomScriptAJ'), url('../fonts/WisdomScriptAJ.woff') format('woff'), url('../fonts/WisdomScriptAJ.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.otf');
+}
+
+@font-face {
+    font-family: 'DroidSerif';
+    src: url('../fonts/DroidSerif.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.otf');
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+
+
+header {
+    background: no-repeat url("./img/head_bg.jpg") center !important;
+    max-height: 700px;
+    overflow: hidden;
+    align-content: center;
+}
+
+header>div {
+    align-items: center;
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+header .logo {
+    font-family: 'WisdomScriptAJ';
+    font-size: 26px;
+    color: #fed136;
+}
+
+header .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px;
+    opacity: 1 !important;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+header li:not(:last-child) {
+    margin-right: 50px;
+    align-items: flex-start;
+}
+
+header a {
+    color: #e4e4e4;
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #fed136;
+    text-decoration: none;
+}
+
+.vertical-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 940px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+header .vertical-wrapper {
+    padding-top: 205px;
+}
+
+.first_note {
+    margin: 0 auto;
+    font-family: DroidSerif;
+    font-style: italic;
+    font-size: 40px;
+    color: #fff;
+}
+
+.second_note {
+    font-family: Montserrat-Regular;
+    font-weight: bold;
+    font-size: 75px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.button button {
+    font-family: Montserrat-Regular;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #fed136;
+    text-transform: uppercase;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    padding: 25px 50px;
+    margin-top: 30px;
+}
+
+.button button:hover {
+    background-color: #9d9d9d;
+    color: #000000;
+}
+
+
+.article {
+    width: 100%;
+}
+
+
+
+.services {
+    background-color: #fff;
+}
+
+.head_note {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.head {
+    font-family: Montserrat-Bold;
+    font-weight: bold;
+    font-size: 40px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.note {
+    font-family: "Myriad Pro";
+    font-size: 16px;
+    text-align: center;
+    color: #777777;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+}
+
+.row span {
+    font-size: 14px;
+}
+
+.circle {
+    width: 73px;
+    height: 73px;
+    border: 3px solid #fed136;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article h3 {
+    font-family: Montserrat-Bold;
+    font-size: 18px;
+}
+
+.content>span {
+    text-align: center;
+}
+
+
+.portfolio,
+.team {
+    background-color: #f7f7f7;
+}
+
+.portfolio .item {
+    background-color: #ffffff;
+}
+
+.item h3,
+.item h5 {
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+}
+
+
+
+.about_us .row {
+    padding-bottom: 92px;
+}
+
+.left_right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.pic1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+}
+
+.pic2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+}
+
+.pic3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+}
+
+.pic4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+}
+
+.pic5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+}
+
+.about_us .row:last-child {
+    padding-bottom: 0;
+}
+
+.circle_des {
+    grid-column: 2/3;
+    width: 160px;
+    height: 160px;
+    border: 8px solid #f1f1f1;
+    background-color: #fed136;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.team h4 {
+    font-size: 16px;
+    font-family: Montserrat-Bold;
+}
+
+.team h4,
+.team h5 {
+    text-align: center;
+
+}
+
+.team h5 {
+    color: #777777;
+}
+
+.team img {
+    align-self: center;
+}
+
+.workers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+.lg {
+    display: grid;
+    column-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+footer {
+    background: url("../img/footer_bg.jpg") center;
+}
+
+footer .head {
+    color: #ffffff;
+}
+
+footer .note {
+    color: #777777;
+}
+
+footer input,
+footer textarea {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.row-input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+
+}
+
+.input {
+    height: 24px;
+
+}
+
+.input:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.row-footer {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+}
+
+footer textarea {
+    height: 145px;
+}
+
+.fa-stack-1x {
+    color: #ffffff;
+}
+
+#twitter:hover {
+    color: blue;
+}
